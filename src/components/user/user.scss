@@ -1,0 +1,35 @@
+@import "../../common/style/variable.scss";
+
+.user-card{
+  width: 300px;
+  margin: 10px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+  font-size: 14px;
+  text-align: left;
+  text-shadow: 0 1px 1px $elBoxShadow;
+  border: 1px solid $lightBorderColor;
+  border-collapse: collapse;
+  background-color: $bgColorLight;
+  box-shadow: $elBoxShadow;
+  &__item{
+    padding: 10px 20px;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    border-color: $lightBorderColor;
+  }
+}
+
+@media (min-width : 320px) and (max-width : 480px) {
+  .user-card{
+    width: 150px;
+    &__item{
+      padding: 10px 10px;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .user-card{
+    width: 200px;
+  }
+}

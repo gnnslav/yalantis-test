@@ -1,0 +1,57 @@
+@import '../../common/style/variable.scss';
+
+.month-title{
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+    color: $textColor;
+  }
+  .months-list{
+    position: relative;
+    margin-top: 25px;
+    list-style-type: none;
+    color: $textColor;
+  }
+  .month-item{
+    width: 70%;
+    padding: 5px;
+    margin: 10px auto;
+    border: 1px solid $lightBorderColor;
+    border-radius: $radiusForEl;
+    box-shadow: $elBoxShadow;
+  }
+  
+  .background-grey{
+    background-color: #302d2d66;
+  }
+  
+  .background-green{
+    background-color: #7fe17f;
+  }
+  
+  .background-blue{
+    background-color: #0909e896;
+  }
+  
+  .background-red{
+    background-color: #f28787;
+  }
+  
+  @media (min-width : 320px) and (max-width : 480px) {
+    .month-title{
+      width: 100%;
+    }
+    .month-item{
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .month-title{
+      width: 90%;
+      margin: 0 auto;
+    }
+    .month-item{
+      width: 90%;
+    }
+  }

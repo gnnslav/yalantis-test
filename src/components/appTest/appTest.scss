@@ -1,0 +1,44 @@
+@import "../../common/style/variable.scss";
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    background-color: $bgColorDark;
+    box-shadow: $elBoxShadow;
+    .months{
+      width: 20%;
+      text-align: left;
+      border: 1px solid $lightBorderColor;
+    }
+    .users{
+      width: 80%;
+      border: 1px solid $lightBorderColor;
+    }
+  }
+  
+  @media (min-width : 320px) and (max-width : 480px) {
+    .container{
+      width: 100%;
+      .months{
+        width: 40%;
+      }
+      .users{
+        width: 60%;
+      }
+    }
+    }
+  
+  @media (max-width: 800px) {
+    .container{
+      width: 100%;
+      .months{
+        width: 40%;
+      }
+      .users{
+        width: 60%;
+      }
+    }
+  }

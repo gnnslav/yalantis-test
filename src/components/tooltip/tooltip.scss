@@ -1,0 +1,43 @@
+@import '../../common/style/variable.scss';
+
+.tooltips-box{
+    //position: relative;
+    position: absolute;
+    text-align: center;
+    transition: 3s;
+    border: 1px solid $darkBorderColor;
+    border-radius: $radiusForEl;
+    background-color: $bgColorLight;
+    list-style-type: none;
+    box-shadow: $elBoxShadow;
+    &:first-child{
+      border-radius: 30px;
+    }
+    &:last-child{
+      border-radius: 30px;
+    }
+  }
+  
+  .tooltips-item{
+    padding: 10px;
+    border: 1px solid $lightBorderColor;
+    background-color: inherit;
+    &:before{
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      top: 11px;
+      left: -11px;
+      transform: rotate(45deg);
+      border-left: 1px solid $darkBorderColor;
+      border-bottom: 1px solid $darkBorderColor;
+      background-color: inherit;
+    }
+    &:first-child{
+      border-radius: $radiusForEl;
+    }
+    &:last-child{
+      border-radius: $radiusForEl;
+    }
+  }
